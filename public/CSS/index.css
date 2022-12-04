@@ -36,7 +36,7 @@ nav {
     display: grid;
     grid-template-columns: 8fr 2fr;
     background: none;
-    height: 78vh;
+    height: 90vh;
     
 }
 
@@ -55,7 +55,7 @@ aside {
     font-weight: bold;
 }
 #notice_container{
-    font-size: 1rem;
+    font-size: .87rem;
     line-height: 8vh;
 
 }
@@ -75,7 +75,7 @@ footer {
 
 .navobj>img {
     height: 100%;
-    width: 100%;
+   /* width: 100%;*/
     object-fit: cover;
 }
 
@@ -87,7 +87,13 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    line-height: 40px;
+    line-height: 60px;
+}
+
+p{
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 1.5rem;
+    color: var(--primary-color); 
 }
 
 h1 {
@@ -96,6 +102,8 @@ h1 {
     color: var(--primary-color);
 }
 h3 {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 1.5rem;
     color: #0c0d1c;
 }
 
