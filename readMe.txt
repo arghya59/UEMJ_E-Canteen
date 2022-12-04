@@ -1,0 +1,1 @@
+MongoDB datebase start : sudo mongod --dbpath /System/Volumes/Data/data/db

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: 'Cabin', sans-serif;
+}
+
+:root {
+    --primary-color: #f8090e;
+    --secondery-color: rgb();
+    --background-color: rgb(240, 240, 240);
+    --text-color: #282c3f;
+    --para-color: #93959f;
+}
+
+nav {
+    padding: 10px;
+    box-shadow: 0px 2px 14px rgb(0 0 0 / 50%);
+    position: relative;
+    z-index: 2245;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: 1fr 7fr 2fr;
+    height: 8vh;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.main_page {
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    background: none;
+    height: 78vh;
+    
+}
+
+.overlay{
+    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.5)), url(../Assets/Background1.jpg);
+    
+}
+
+aside {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    background-color: var(--background-color);
+    padding: 25px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+#notice_container{
+    font-size: 1rem;
+    line-height: 8vh;
+
+}
+
+li{
+    color: var(--primary-color);
+}
+
+footer {
+    height: 10vh;
+}
+
+/*Nav*/
+.navobj {
+    height: 8vh;
+}
+
+.navobj>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.loginsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 40px;
+}
+
+h1 {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+h3 {
+    color: #0c0d1c;
+}
+
+#loginsection2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.loginoption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.loginopt {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.loginopt:hover{
+    transform: scale(1.2);
+}
+
+.loginopt>span {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
