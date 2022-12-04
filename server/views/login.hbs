@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Log in for UEM canteen...</title>
+    <link rel="stylesheet" href="./CSS/colorVariables.css">
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Cabin', sans-serif;
+        color: #fff8f9;
+        text-align: center;
+    }
+
+    #studlogin {
+        background-image: url(./Assets/login_background.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+    }
+
+    #loginarea {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 80vh;
+        width: 60%;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        height: 50px;
+        width: 500px;
+        background: #00000029;
+        border: none;
+        border-radius: 20px;
+        border-bottom: 2px solid var(--primary-color);
+        color: white;
+        cursor: pointer;
+        font-size: large;
+    }
+
+    #username{
+        background-image: url(./Assets/login-icon-3048.png);
+        background-size: 25px;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding-left: 40px;
+    }
+
+    #username:hover, #password:hover{
+        border-color: white;
+    }
+    #username:focus, #password:focus{
+        border-color: white;
+    }
+
+    #password{
+        background-image: url(https://icon-library.com/images/untitled-16-512.png);
+        background-size: 25px;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding-left: 40px;
+    }
+
+    input{
+        margin: 20px;
+        outline: none;
+    }
+
+    #loginbtn{
+        width: 50%;
+        height: 50px;
+        border: 2px solid var(--primary-color);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #loginbtn>span{
+        color: white;
+        font-size: large;
+    }
+
+</style>
+
+
+<body>
+    <section id="studlogin">
+        <div id="loginarea">
+            <div>
+                <h2>Welcome to Student Login page</h2>
+                <p>Please enter your credential to book your order</p>
+            </div>
+
+            <form action="">
+                <input id="username" type="username" placeholder="User ID (e.g. Phone number)" required>
+                <input id="password" type="password" placeholder="Password" required>
+            </form>
+                <a href="/Main" id="loginbtn"><span>Log in</span></a>
+                <p>Not a member? <a href="/Registration">Register now</a></p>
+                <a href="/">Home</a>
+            
+        </div>
+    </section>
+</body>
+
+</html>

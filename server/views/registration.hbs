@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Log in for UEM canteen...</title>
+    <link rel="stylesheet" href="./CSS/colorVariables.css">
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Cabin', sans-serif;
+        color: #fff8f9;
+        text-align: center;
+    }
+
+    #studlogin {
+        background-image: url(./Assets/login_background.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+    }
+
+    #loginarea {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        width: 60%;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input {
+        height: 40px;
+        width: 500px;
+        background: #00000029;
+        border: none;
+        border-radius: 20px;
+        border-bottom: 2px solid var(--primary-color);
+        color: white;
+        cursor: pointer;
+        font-size: medium;
+        margin: 10px;
+        outline: none;
+    }
+
+    #regbtn {
+        width: 50%;
+        border: 2px solid var(--primary-color);
+        font-size: large;
+    }
+</style>
+
+
+<body>
+    <section id="studlogin">
+        <div id="loginarea">
+            <div>
+                <h2>Welcome to Registration page</h2>
+                <p>Please enter your details to create your account</p>
+            </div>
+
+            <form action="">
+                <input class="input" id="name" type="text" placeholder="Enter your name" required>
+                <input class="input" id="age" type="number" maxlength="2" placeholder="Enter your age" required>
+                <input class="input" id="mob" type="number" placeholder="Enter your phone no" maxlength="10" required>
+                <span>
+                    <label for="pp">Profile picture</label>
+                    <input id="pp" name="pp" type="file" placeholder="Select a image" accept="image/*" required>
+                </span>
+                <input class="input" id="email" type="email" placeholder="Enter your E-mail" required>
+                <input class="input" id="year" type="number" maxlength="1" max="4" placeholder="Enter your College year">
+                <input class="input" id="enrollment" type="number" placeholder="Enter your Enrollment number">
+                <input class="input" id="password" type="password" minlength="8" maxlength="20" placeholder="Enter a password"
+                    required>
+                <input class="input" id="regbtn" type="submit" value="Register">
+                <p>Already have an account? <a href="./login.html">Log in</a></p>
+                
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

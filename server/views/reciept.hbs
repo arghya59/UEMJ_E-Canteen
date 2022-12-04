@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed</title>
+    <link rel="stylesheet" href="./CSS/colorVariables.css">
+</head>
+<body>
+
+    <!-- CSS -->
+    <style>
+        nav{
+        position: relative;
+        box-shadow: 0px 2px 20px rgb(0 0 0 / 30%);
+        background-color: white;
+    }
+
+    body{
+        background-color: var(--background-color);
+    }
+    
+    .nevigation{
+        display: grid;
+        grid-template-columns: 5fr 5fr;
+        height: 10vh;
+        width: 100%;
+    
+    }
+
+    .nevigation>a{
+        margin: auto;
+    }
+    
+    .navgrids{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .Invoice-Box {
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            border: 1px solid #eee;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            font-size: 16px;
+            line-height: 24px;
+            font-family: Arial, sans-serif
+        }
+
+        .Invoice-Box table {
+            width: 100%;
+            line-height: inherit;
+            text-align: left;
+        }
+
+        .Invoice-Box table td{
+            padding: 5px;
+            vertical-align: top;
+        }
+        .Invoice-Box table tr td:nth-child(2){
+            text-align: right;
+
+        }
+        .Invoice-Box table tr.top table td{
+            padding-bottom: 20px;
+        }
+        .Invoice-Box table tr.information table td{
+            padding-bottom: 40px;
+        }
+        .Invoice-Box table tr.heading td{
+            background: #eee;
+            border-bottom: 1px solid #ddd;
+            font-weight: bold;
+        }
+        .Invoice-Box table tr.details td{
+            padding-bottom: 20px;
+        }
+        .Invoice-Box table tr.item td{
+            border-bottom: 1px solid #eee;
+        }
+        @media only screen and (max-width: 600px){
+            .Invoice-Box table tr.top table td{
+                width: 100%;
+                display: block;
+                text-align: center;
+            }
+            .Invoice-Box table table tr.information table td {
+                width: 100%;
+                display: block;
+                text-align: center;
+            }
+        }
+
+
+    </style>
+
+
+    <!-- HTML -->
+    
+    <nav>
+        <div class="nevigation">
+            <a href="./main.html" style=" font-family: 'Mochiy Pop One', sans-serif; color: var(--primary-color); font-size: 1.5rem;">UEM
+                    Canteen System</a>
+                
+            <a href="">Arghya Banerjee</a>
+        </div> 
+    </nav>
+
+
+     <!--starting Div-->
+    <div class="Invoice-Box">
+
+        <table cellpadding="0" cellspacing="0">
+            <tr class="top">
+                <td colspan="2">
+                    <!--again create neat table-->
+                    <table>
+                        <tr>
+                            <td>
+                                <h4> Elite Programmer </h4>
+                            </td>
+                            <td>
+                                Invoice #:123<br>
+                                Created: October 17, 2022<br>
+                            </td>
+                        </tr>
+                    </table>
+                    <!--End The Table-->
+
+                </td>
+            </tr>
+            <tr class="information">
+                <td colspan="2">
+                    <!--Inner Table Start Here-->
+                    <table>
+                        <tr>
+                            <td>
+                                UEM ONLINE FOOD PORTAL,JAIPUR<br>
+                                Phone: +919919754674 <br>
+                            </td>
+                            <td>
+                                WEB DEVELOPER: Arghya Banerjee<br>
+                                ANDROID DEVELOPER: Aashutosh Utkarsh<br>
+                                FRONT-END DEVELOPER: Souvik Banerjee<br>
+                            </td>
+                        </tr>
+                    </table>
+                    <!--Inner Table End-->
+                </td>
+            </tr>
+            <tr class="heading">
+                <td>
+                    Payment Method
+                </td>
+                <td>Check #</td>
+            </tr>
+            <tr class="details">
+                <td>Check</td>
+                <td>1000</td>
+            </tr>
+            <tr class="heading">
+                <td>Item</td>
+                <td>Price</td>
+            </tr>
+            <tr class="item">
+                <td>Website Design</td>
+                <td>10000 rs</td>
+            </tr>
+            <tr class="item">
+                <td>Hosting</td>
+                <td>10000 rs</td>
+            </tr>
+            <tr class="item">
+                <td>Domain</td>
+                <td>1000rs</td>
+            </tr>
+
+
+
+
+    </div>
+    
+</body>
+</html>
