@@ -77,14 +77,14 @@
                 <p>Please enter your details to create your account</p>
             </div>
 
-            <form action="">
+            <form method="POST" action="/User/Register">
                 <input name="username" class="input" id="name" type="text" placeholder="Enter your name" required>
                 <input name="userEnrollment" class="input" id="age" type="number" maxlength="10" placeholder="Enter your Enrollment No" required>
                 <input name="contactNo" class="input" id="mob" type="number" placeholder="Enter your phone no" maxlength="10" required>
                 <input name="userEmail" class="input" id="email" type="email" placeholder="Enter your E-mail" required>
                 <input name="userBlock" class="input" id="year" type="text" placeholder="Enter your Block Name" required>
                 <input name="userRoom" class="input" id="enrollment" type="number" placeholder="Enter your Room number" required>
-                <input name="userPass" class="input" id="password" type="password" minlength="8" maxlength="20" placeholder="Enter a password"
+                <input name="password" class="input" id="password" type="password" minlength="8" maxlength="20" placeholder="Enter a password"
                     required>
                 <input class="input" id="regbtn" type="submit" value="Register">
                 <p>Already have an account? <a href="/Student-login">Log in</a></p>

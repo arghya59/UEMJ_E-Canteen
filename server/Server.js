@@ -5,7 +5,8 @@ const path = require('path');
 const hbs = require('hbs');
 
 //Routers import
-const postRequests = require("./routers/postRequests")
+const postRequests = require("./routers/postRequests");
+const async = require('hbs/lib/async');
 
 
 //db
@@ -29,6 +30,11 @@ app.set('view engine', 'hbs')
 // Set Partials
 hbs.registerPartials(pertialFolderPath)
 
+//DATA RELATED
+app.use(Express.json())
+app.use(Express.urlencoded({ extended: false }))
+
+
 //Creating Server.............................................
 //Home page
 app.get("/", (req, res)=>{
@@ -42,10 +48,7 @@ app.get("/Student-login", (req, res) => {
 app.get('/Registration', (req, res)=>{
     res.render('registration')
 })
-//About...
-app.get('/Registration', (req, res)=>{
-    res.send('This is about page yet to be ready')
-})
+
 //Main page...
 app.get('/Main', (req, res)=>{
     res.render('main')
@@ -82,7 +85,6 @@ app.get("/Foodmanagement", (req, res)=> {
 app.get("/Ordermanagement", (req, res)=> {
     res.render("Ordermanagement")
 })
-
 
 
 //Error 404

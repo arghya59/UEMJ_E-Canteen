@@ -95,11 +95,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        background: none;
+        cursor: pointer;
     }
-    #loginbtn>span{
-        color: white;
-        font-size: large;
+    #loginbtn:hover{
+        background-color: rgba(0, 0, 0, 0.113);
+        border-color: white;
     }
+   
 
 </style>
 
@@ -112,11 +115,11 @@
                 <p>Please enter your credential to book your order</p>
             </div>
 
-            <form action="">
-                <input id="username" type="username" placeholder="User ID (e.g. Phone number)" required>
-                <input id="password" type="password" placeholder="Password" required>
+            <form method="POST" action="/user/login">
+                <input name="loginUserName" id="username" type="username" placeholder="User ID (e.g. Phone number)" required>
+                <input name="LogInpassword" id="password" type="password" placeholder="Password" required>
+                <button id="loginbtn" class="btn btn-primary" type="submit">Log in</button>
             </form>
-                <a href="/Main" id="loginbtn"><span>Log in</span></a>
                 <p>Not a member? <a href="/Registration">Register now</a></p>
                 <a href="/">Home</a>
             
