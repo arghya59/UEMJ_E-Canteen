@@ -4,6 +4,10 @@ const app = Express();
 const path = require('path');
 const hbs = require('hbs');
 
+//Routers import
+const postRequests = require("./routers/postRequests")
+
+
 //db
 require("./database/databaseConn")
 
@@ -17,6 +21,7 @@ const pertialFolderPath = path.join(__dirname, "../server/views/partials")
 
 //Built-in middleware to read all file formats...
 app.use(Express.static(publicFolderPath));
+
 
 // Set Tamplate engine
 app.set('view engine', 'hbs')
@@ -53,11 +58,40 @@ app.get('/yourOrders', (req, res)=>{
 app.get("/reciept", (req, res)=>{
     res.render("reciept")
 })
+//About page...
+app.get("/About", (req, res)=>{
+    res.render("about")
+})
+//Admin About page...
+app.get("/Admin-login", (req, res)=>{
+    res.render("admin-about")
+})
+//Admin dash board...
+app.get("/Dashboard", (req, res)=> {
+    res.render("dash")
+})
+//Admin  usermanagement...
+app.get("/Usermanagement", (req, res)=> {
+    res.render("usermanagement")
+})
+//Admin food management...
+app.get("/Foodmanagement", (req, res)=> {
+    res.render("Foodmanagement")
+})
+//Admin  management...
+app.get("/Ordermanagement", (req, res)=> {
+    res.render("Ordermanagement")
+})
+
+
+
 //Error 404
 app.get("*", (req, res) => {
     res.status(404).send("404")
 })
 
+//Register router... ## HTTP requests are provided in the router file ##
+app.use(postRequests)
 
 
 //Listing Server...

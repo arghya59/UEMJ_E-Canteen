@@ -1,0 +1,142 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/usermanagement.css">
+    <link rel="stylesheet" href="./CSS/foodmanagement.css">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>Admin</h1>
+        </div>
+        <ul>
+            <a href="/Dashboard"><li>Dashboard</li></a>
+            <a href="/Usermanagement"><li>User Management</li></a>
+            <a href="/Foodmanagement"><li>Food Management</li></a>
+            <a href="/Ordermanagement"><li>Orders Management</li></a>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1><label for="">
+                    <h2 class="University_Of_Engineering">Food Management</h2>
+                </label>
+            </h1>
+        </header>
+        <div class="content">
+            <header class="canteen-name">
+                <h3>Chinese Canteen</h3>
+            </header>
+        </div>
+        <div class="content-2">
+            <div class="Menu-Items">
+                <div class="title">
+                    <h2>Add Food</h2>
+                </div>
+                <div class="container">
+
+
+                    <form action="">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="fname">Food Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="fname" name="Foodname" placeholder="Food name..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="lname">Food Price</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="fprice" name="Foodprice" placeholder="Food Price..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="Available">Avalability</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="AVL" name="Available">
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div id="foodAddBtnContainer">
+                            <button class="foodAddBtn" type="submit">ADD</button>
+                        </div>
+                    </form>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="content-2">
+            <div class="Menu-Items">
+                <div class="title">
+                </div>
+                <table>
+                    <tr>
+                        <th>Food Name</th>
+                        <th>Price</th>
+                        <th>Food Id</th>
+                        <th>Avl/Not</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tr>
+                        <td>Bread Pakoda</td>
+                        <td>₹ 40</td>
+                        <td> 304 </td>
+                        <td> Yes</td>
+                        <td><button class="del">X</button></td>
+                    </tr>
+                    <tr>
+                        <td>Tripple Rice</td>
+                        <td>₹ 120</td>
+                        <td> 206 </td>
+                        <td>Yes</td>
+                        <td><button class="del">X</button></td>
+                    </tr>
+                    <tr>
+                        <td>Jam Bread</td>
+                        <td>₹ 20</td>
+                        <td> 555 </td>
+                        <td>Yes</td>
+                        <td><button class="del">X</button></td>
+                    </tr>
+                    <tr>
+                        <td>Chilly Chicken</td>
+                        <td>₹ 150</td>
+                        <td> 347 </td>
+                        <td>No</td>
+                        <td><button class="del">X</button></td>
+                    </tr>
+                    <tr>
+                        <td>Hakka Noodles</td>
+                        <td>₹ 90</td>
+                        <td> 644 </td>
+                        <td>No</td>
+                        <td><button class="del">X</button></td>
+                    </tr>
+                    <tr>
+                        <td>Egg Rice</td>
+                        <td>₹ 80</td>
+                        <td> 069 </td>
+                        <td>Yes</td>
+                        <td><button class="del">X</button></td>
+                    </tr>
+    </div>
+</body>
+
+</html>
