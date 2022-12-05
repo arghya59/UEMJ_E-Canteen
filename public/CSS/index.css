@@ -79,7 +79,9 @@ footer {
     object-fit: cover;
 }
 
-
+.navobj>a{
+    font-size: 1.2rem;
+}
 
 
 .loginsection {
