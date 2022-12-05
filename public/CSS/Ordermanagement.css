@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2 {
+    color: #444;
+}
+
+.side-menu {
+    background: crimson;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu .brand-name {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-menu li {
+    font-size: 24px;
+    padding: 10px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.side-menu li:hover {
+    background: white;
+    color: #f05462;
+}
+
+#active{
+    background: white;
+    color: #f05462;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #f05462
+}
+
+table{
+    padding: 10px;
+}
+
+th,td{
+    text-align: left;
+    padding: 8px;
+}
+
+.main-content {
+    margin-right: 0px;
+    margin: 0px;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    width: 80vw;
+}
+
+header {
+    position: flex;
+    display: flex;
+    top: 0;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.canteen-name{
+    background-color: crimson;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+label {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.content {
+    margin-right: 0px;
+    margin: 0px
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    padding: auto;
+    text-align: center;
+}
+
+.box{
+    width: 15vw;
+    height: 50px;
+    margin: 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.area{
+    margin: auto;
+}
+
+.main-content .content .content-2{
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.Menu-Items{
+    flex: 5;
+    background: white;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+
+button.del {
+    height: 30px;
+    width: 40px;
+}
